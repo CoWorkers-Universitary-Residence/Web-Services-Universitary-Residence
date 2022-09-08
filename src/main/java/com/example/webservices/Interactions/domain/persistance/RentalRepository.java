@@ -1,0 +1,5 @@
+package com.example.webservices.Interactions.domain.persistance;
+
+public interface RentalRepository
+{
+}
