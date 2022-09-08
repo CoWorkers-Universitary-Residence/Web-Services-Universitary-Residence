@@ -1,4 +1,4 @@
 package com.example.webservices.users.domain.service;
 
-public interface UserTenantRepository {
+public interface UserTenantService {
 }
