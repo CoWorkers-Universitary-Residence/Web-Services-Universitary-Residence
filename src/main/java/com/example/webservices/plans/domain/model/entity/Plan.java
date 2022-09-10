@@ -1,10 +1,12 @@
 package com.example.webservices.plans.domain.model.entity;
 
+import com.example.webservices.subscriptions.domain.entity.Subscription;
 import lombok.*;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import java.util.List;
 
 @Getter
 @Setter
@@ -26,4 +28,7 @@ public class Plan {
     @NotNull
     @Column(nullable = false)
     private Float price;
+
+    @OneToMany
+    private List<Subscription> subscriptions;
 }
