@@ -1,0 +1,31 @@
+logging:
+    level:
+        hibernate:
+            SQL: DEBUG
+        org:
+            hibernate:
+                type: TRACE
+org:
+    springframework:
+        boot:
+            web:
+                server:
+                    WebServerException: Unable
+server:
+    error:
+        include-message: always
+        include-stacktrace: never
+    port: 8090
+spring:
+    application:
+        name: challenge
+    datasource:
+        password: admin
+        url: jdbc:postgresql://localhost:5432/universitartyresidence?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false
+        username: postgres
+    jpa:
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.PostgreSQLDialect
