@@ -3,11 +3,8 @@ package com.example.webservices.Interactions.resource.update;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
-public class UpdateRentalResource {
+public class UpdateReviewResource {
     private Long id;
-
-    @NotNull
-    private Double price;
 
     @NotNull
     @NotBlank
@@ -15,12 +12,8 @@ public class UpdateRentalResource {
 
     @NotNull
     @NotBlank
-    private java.util.Date start_date;
+    private String comment;
 
     @NotNull
-    @NotBlank
-    private java.util.Date finish_date;
-
-    @NotNull
-    private int months;
+    private int score;
 }
