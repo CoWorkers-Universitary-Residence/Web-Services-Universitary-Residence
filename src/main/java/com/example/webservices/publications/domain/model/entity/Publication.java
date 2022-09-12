@@ -7,6 +7,7 @@ import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.util.List;
 
 @Getter
 @Setter
@@ -78,6 +79,9 @@ public class Publication extends AuditModel {
 
     @NotNull
     private int views;
+
+    @OneToMany
+    private List<Photo> photos;
 
     //TODO Relation with owner
 }

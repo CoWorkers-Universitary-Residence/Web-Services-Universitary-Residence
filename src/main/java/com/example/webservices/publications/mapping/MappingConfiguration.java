@@ -7,4 +7,9 @@ import org.springframework.context.annotation.Configuration;
 public class MappingConfiguration {
     @Bean
     public PublicationMapper publicationMapper(){ return new PublicationMapper(); }
+
+    @Bean
+    public PhotoMapper photoMapper(){
+        return new PhotoMapper();
+    }
 }
