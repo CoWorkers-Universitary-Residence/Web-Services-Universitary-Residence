@@ -5,6 +5,7 @@ import com.example.webservices.publications.resource.update.UpdatePublication;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import com.example.webservices.publications.domain.model.service.PublicationService;
 import com.example.webservices.publications.mapping.PublicationMapper;
 import com.example.webservices.publications.resource.PublicationResource;
