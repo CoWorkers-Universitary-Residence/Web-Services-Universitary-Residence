@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 
 @RestController
-@RequestMapping("/api/v1/users-owner")
+@RequestMapping("/api/v1/usersowner")
 @CrossOrigin
 public class UserOwnerController {
     private final UserOwnerService userOwnerService;

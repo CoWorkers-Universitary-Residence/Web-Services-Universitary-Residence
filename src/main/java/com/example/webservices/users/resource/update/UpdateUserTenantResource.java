@@ -1,8 +1,15 @@
 package com.example.webservices.users.resource.update;
 
-import com.example.webservices.Interactions.domain.entity.Date;
 import com.example.webservices.users.domain.model.enums.Gender;
+import lombok.*;
 
+import java.util.Date;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+@With
 public class UpdateUserTenantResource {
     private String name;
     private String lastName;

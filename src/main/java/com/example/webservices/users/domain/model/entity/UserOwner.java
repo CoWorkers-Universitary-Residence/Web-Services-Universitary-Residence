@@ -9,6 +9,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import java.util.Date;
 
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
@@ -30,11 +31,10 @@ public class UserOwner {
     private String lastName;
 
     @NotNull
-    @NotBlank
+    @Enumerated(value = EnumType.STRING)
     private Gender gender;
 
     @NotNull
-    @NotBlank
     private Date date_of_birth;
 
     @NotNull
@@ -57,12 +57,10 @@ public class UserOwner {
     @NotBlank
     private String photo;
 
-    @NotNull
-    @NotBlank
+    @Enumerated(value = EnumType.STRING)
     private Status status;
 
     @NotNull
-    @NotBlank
     private Long score;
 
     @NotNull

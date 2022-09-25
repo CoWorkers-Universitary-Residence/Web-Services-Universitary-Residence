@@ -1,11 +1,17 @@
 package com.example.webservices.users.resource.create;
 
-import com.example.webservices.Interactions.domain.entity.Date;
 import com.example.webservices.users.domain.model.enums.Gender;
+import lombok.*;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import java.util.Date;
 
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+@With
 public class CreateUserOwnerResource {
 
     @NotNull
@@ -17,11 +23,9 @@ public class CreateUserOwnerResource {
     private String lastName;
 
     @NotNull
-    @NotBlank
     private Gender gender;
 
     @NotNull
-    @NotBlank
     private Date date_of_birth;
 
     @NotNull

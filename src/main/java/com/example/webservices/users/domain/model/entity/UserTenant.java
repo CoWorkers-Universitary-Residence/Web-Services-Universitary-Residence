@@ -32,11 +32,10 @@ public class UserTenant {
     private String lastName;
 
     @NotNull
-    @NotBlank
+    @Enumerated(value = EnumType.STRING)
     private Gender gender;
 
     @NotNull
-    @NotBlank
     private Date date_of_birth;
 
     @NotNull

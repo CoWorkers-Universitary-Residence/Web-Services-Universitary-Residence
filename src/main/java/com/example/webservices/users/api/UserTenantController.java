@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 @RestController
-@RequestMapping("/api/v1/userTenants-tenant")
+@RequestMapping("/api/v1/userstenant")
 @CrossOrigin
 public class UserTenantController {
     private final UserTenantService userTenantService;
