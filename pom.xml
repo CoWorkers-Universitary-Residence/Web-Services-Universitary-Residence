@@ -33,7 +33,7 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
+            <artif1actId>spring-boot-starter-test</artif1actId>
             <scope>test</scope>
         </dependency>
         <dependency>
