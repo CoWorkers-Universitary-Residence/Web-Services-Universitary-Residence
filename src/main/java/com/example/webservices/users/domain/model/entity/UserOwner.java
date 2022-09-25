@@ -60,7 +60,7 @@ public class UserOwner {
     @Enumerated(value = EnumType.STRING)
     private Status status;
 
-    @NotNull
+
     private Long score;
 
     @NotNull
