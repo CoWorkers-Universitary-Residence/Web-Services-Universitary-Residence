@@ -1,6 +1,5 @@
 package com.example.webservices.users.domain.model.entity;
 
-import com.example.webservices.Interactions.domain.entity.Date;
 import com.example.webservices.users.domain.model.enums.Gender;
 import com.example.webservices.users.domain.model.enums.Status;
 import lombok.*;
@@ -8,6 +7,7 @@ import lombok.*;
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import java.util.Date;
 
 @NoArgsConstructor
 @AllArgsConstructor

@@ -7,11 +7,13 @@ import com.example.webservices.users.domain.model.entity.UserTenant;
 import com.example.webservices.users.domain.persistance.UserTenantRepository;
 import com.example.webservices.users.domain.service.UserTenantService;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
 
 import javax.validation.ConstraintViolation;
 import javax.validation.Validator;
 import java.util.Set;
 
+@Service
 public class UserTenantServiceImpl implements UserTenantService {
     private static final String ENTITY = "UserTenant";
     private final UserTenantRepository userRepository;
