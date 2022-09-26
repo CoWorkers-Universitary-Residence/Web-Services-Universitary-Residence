@@ -23,7 +23,6 @@ public class Date extends AuditModel {
     private Long id;
 
     @NotNull
-    @NotBlank
     private java.util.Date start_date;
 
     @NotNull

@@ -20,7 +20,6 @@ public class Review extends AuditModel {
     private Long id;
 
     @NotNull
-    @NotBlank
     private java.util.Date date;
 
     @NotNull
