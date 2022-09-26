@@ -9,7 +9,7 @@ import java.util.Optional;
 
 @Repository
 public interface RentalRepository extends JpaRepository<Rental, Long> {
-    List<Rental> findByPublicationId(Long publicationId);
-    List<Rental> findByTenantId(Long tenantId);
-    Optional<Rental> findByIdAndPublicationIdAndTenantId(Long id, Long publicationId, Long tenantId);
+    /*
+    List<Rental> findByDateId(Long dateId);
+    Optional<Rental> findByIdAndDateId(Long id, Long dateId);*/
 }

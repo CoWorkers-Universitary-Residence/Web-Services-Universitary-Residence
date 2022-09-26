@@ -30,4 +30,6 @@ public class CreateDateResource {
     @NotNull
     @NotBlank
     private String description;
+
+    private boolean status;
 }

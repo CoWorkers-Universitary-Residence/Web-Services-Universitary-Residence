@@ -1,6 +1,7 @@
 package com.example.webservices.shared.mapping;
 
 
+import com.example.webservices.Interactions.mapping.DateMapper;
 import com.example.webservices.users.mapping.UserOwnerMapper;
 import com.example.webservices.users.mapping.UserTenantMapper;
 import org.springframework.context.annotation.Bean;
@@ -19,5 +20,8 @@ public class MappingConfiguration {
     @Bean
     public UserTenantMapper userTenantMapper() { return new UserTenantMapper(); }
     //
+
+    @Bean
+    public DateMapper dateMapper() { return new DateMapper(); }
 
 }

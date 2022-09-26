@@ -8,11 +8,10 @@ import java.util.List;
 public interface RentalService {
     List<Rental> getAll();
     Rental getById(Long rentalId);
-    List<Rental> getAllByPublicationId(Long publicationId);
-    List<Rental> getAllByTenantId(Long tenantId);
+    List<Rental> getAllByDateId(Long dateId);
 
-    Rental create(Long publicationId, Long tenantId, Rental rental);
-    Rental update(Long publicationId, Long tenantId, Long rentalId, Rental rental);
-    ResponseEntity<?> delete(Long publicationId, Long tenantId, Long rentalId);
+    Rental create(Long dateId, Rental rental);
+    Rental update(Long dateId, Long rentalId, Rental rental);
+    ResponseEntity<?> delete(Long dateId, Long rentalId);
 
 }

@@ -41,7 +41,7 @@ public class Date extends AuditModel {
     @NotBlank
     private String description;
 
-    /*
+    private boolean status;
 
     //Relationships
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
@@ -52,5 +52,4 @@ public class Date extends AuditModel {
     @JoinColumn(name = "tenant_id", nullable = false)
     private UserTenant tenant;
 
-     */
 }

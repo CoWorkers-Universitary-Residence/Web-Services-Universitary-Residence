@@ -37,16 +37,8 @@ public class Rental extends AuditModel {
     @NotNull
     private int months;
 
-    /*
-
     //Relationships
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "publication_id", nullable = false)
-    private Publication publication;
-
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "tenant_id", nullable = false)
-    private UserTenant tenant;
-
-     */
+    @OneToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "date_id", nullable = false)
+    private Date c_date;
 }

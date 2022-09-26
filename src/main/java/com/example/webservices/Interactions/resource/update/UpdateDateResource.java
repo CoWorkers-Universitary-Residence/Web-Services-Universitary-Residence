@@ -32,4 +32,6 @@ public class UpdateDateResource {
     @NotNull
     @NotBlank
     private String description;
+
+    private boolean status;
 }

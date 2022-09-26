@@ -31,7 +31,7 @@ public class Review extends AuditModel {
     private int score;
 
     /*
-
+    TODO: IMPLEMENTAR RELATIONSHIPS (DATE)
     //Relationships
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "publication_id", nullable = false)
@@ -40,6 +40,5 @@ public class Review extends AuditModel {
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "tenant_id", nullable = false)
     private UserTenant tenant;
-
      */
 }
