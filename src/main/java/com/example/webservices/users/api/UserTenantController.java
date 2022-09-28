@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 @CrossOrigin(origins = "*", methods= {RequestMethod.GET,RequestMethod.POST,RequestMethod.PUT,RequestMethod.DELETE})
-@Tag(name = "User owner", description = "CRUD owners")
+@Tag(name = "User tenant", description = "CRUD tenants")
 @RestController
 @RequestMapping("/api/v1/userstenant")
 public class UserTenantController {
